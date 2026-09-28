@@ -1,0 +1,10 @@
+1  Mega Frost Frosty (Hielo) Azul celeste
+2  Mega Blast Bacon (Bombardeo)  Anaranjado
+3  Mega Burning Burrito (Fuego) Rojo
+4  Mega Gunner Gummy (Pegajoso) Verde claro
+5  Mega Neutron Nuggets (Magnetico) Gris
+6  Mega Ground Gingerbread (Tierra) Cafe
+7  Mega Poison Pie (Veneno) Morado
+8  Mega Striker Sushi (Luchador) Rosado
+9  Mega Flying Flan (Volador) Blanco
+10 Mega Charged Croissant (electrico) Amarillo
