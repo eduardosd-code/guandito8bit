@@ -49,8 +49,10 @@ def render(tracks, length, noise_events=None):
     peak = float(np.max(np.abs(buf))) or 1.0
     buf = buf / peak * 0.85
     pcm = (buf * 32767).astype('<i2').tobytes()
+    assert len(pcm) > 0, 'audio vacio'
     return b'RIFF' + struct.pack('<I', 36 + len(pcm)) + b'WAVEfmt ' + \
-           struct.pack('<IHHIIHH', 16, 1, 1, SR, SR * 2, 2, 16) + b'data' + struct.pack('<I', len(pcm))
+           struct.pack('<IHHIIHH', 16, 1, 1, SR, SR * 2, 2, 16) + b'data' + \
+           struct.pack('<I', len(pcm)) + pcm
 
 N = lambda semi: note_freq(60 + semi)
 CHORDS = {'Am': [N(0), N(3), N(7)], 'F': [N(-4), N(0), N(4)], 'C': [N(-2), N(2), N(5)],
